@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/template/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: rgb(183, 205, 94);
+    }
+
+
+    header {
+        background-color: #96c507;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+    }
+    nav {
+        background-color: #c0e688;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 20px;
+    }
+    nav a:hover {
+        background-color: #cbe785;
+    }
+    @media only screen and (min-width: 768px) {
+    /* Add styles for larger screens here */
+    }
+
+/* CSS for smaller screens (e.g., smartphones) */
+    @media only screen and (max-width: 767px) {
+    /* Add styles for smaller screens here */
+    }
+
+
+    
+    
+    footer {
+        background-color: #064706;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } 
+    .product-container {
+        width: 200px;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
+    .product-details {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .product-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    
+    .rupee-symbol {
+        font-size: 24px; /* Adjust font size as needed */
+        color: #2f465f;
+    }
+
+   
+
+
+
+    .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        select, input {
+            padding: 10px;
+            margin: 5px;
+            background-color: rgba(107, 251, 152, 0.237);
+            color: rgb(31, 29, 29);
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(13, 61, 31);
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #19271e;
+        }
+
+        #result {
+            font-size: 30px;
+            margin-top: 10px;
+            color: #0a581b;
+        }
+
+        table {
+            width: +50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #0a581b;
+            color: rgb(19, 24, 20);
+        }
+
+        .history-container {
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1b622a;
+        }
+
+        input[type="number"] {
+            padding: 8px;
+            width: 100%;
+            border: 5px solid #194f31;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #123f19;
+        }
+
+        input[type="number"]::placeholder {
+            color: #272927;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Website Mr.John</h1>
+
+</header>
+
+<nav>
+    <a href="http://127.0.0.1:5500/template/home.html">Home</a>
+    <a href="http://127.0.0.1:5500/template/orders.html">Orders</a>
+    <a href="http://127.0.0.1:5500/template/home.html#login">Login</a>
+    <a href="http://127.0.0.1:5500/template/home.html#contact">Contact Us</a>
+</nav>
+<div class="product-container">
+    <img class="product-image" src="./Home Page_files/300x200" alt="Product Image">
+    <div class="product-details">
+        <h2 class="product-title">Product Name</h2>
+        <div class="rupee-symbol">₹38</div>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <select id="commission">
+        <option value="own">own</option>
+        <option value="sales">Salesman</option>
+        <option value="bill">bill</option>
+        <option value="amnt">amnt</option>
+        <option value="East">East</option>
+    </select>
+
+    <br>
+    <center>
+    <table>
+        <tbody><tr>
+            <th>Inputs</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="lg" placeholder="Enter half large" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="hf" placeholder="Enter half" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="eco" placeholder="Enter economy" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="bun" placeholder="Enter bun" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="frty" placeholder="frooty" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="br" placeholder="Enter brown" value="0"></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="hbr" placeholder="Enter half brown" value="0"></td>
+        </tr>
+    </tbody></table>
+</center>
+    <br>
+
+    <button onclick="calculate()">Submit</button>
+    <p id="result"></p>
+
+    <div class="history-container">
+        <h2>History</h2>
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>Commission</th>
+                    <th>Half Large</th>
+                    <th>Half</th>
+                    <th>Economy</th>
+                    <th>Bun</th>
+                    <th>Frooty</th>
+                    <th>Brown</th>
+                    <th>Half Brown</th>
+                    <th>Result</th>
+                    <th>Action</th>
+                    <th>date</th>
+                    <th>time</th>
+                </tr>
+            </thead>
+            <tbody id="historyBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Load history from local storage on page load
+    window.onload = function() {
+        loadHistory();
+    };
+
+    function calculate() {
+        var lg = parseFloat(document.getElementById("lg").value);
+        var hf = parseFloat(document.getElementById("hf").value);
+        var eco = parseFloat(document.getElementById("eco").value);
+        var bun = parseFloat(document.getElementById("bun").value);
+        var frty = parseFloat(document.getElementById("frty").value);
+        var br = parseFloat(document.getElementById("br").value);
+        var halfbr = parseFloat(document.getElementById("hbr").value);
+        var commission = document.getElementById("commission").value;
+
+        var result;
+
+        switch (commission) {
+            case "own":
+                result = lg * 1.82 + hf * 1.15 + eco * 3.55 + bun * 0.42 + frty * 1.32 + br * 3.02 + halfbr * 1.50;
+                break;
+            case "sales":
+                result = lg * 1.18 + hf * 0.75 + eco * 2.20 + bun * 0.58 + frty * 0.88 + br * 1.93 + halfbr * 1;
+                break;
+            case "bill":
+                result = lg * 30.50 + hf * 15.60 + eco * 60.25 + bun * 16 + frty * 19.30 + br * 37.75 + halfbr * 18.50;
+                break;
+            case "amnt":
+                result = lg * 33.50 + hf * 17.50 + eco * 66 + bun * 17.50 + frty * 21.50 + br * 42.70 + halfbr * 21;
+                break;
+            case "East":
+                result = lg * 2.36 + hf * 1.50 + eco * 4.60 + bun * 0 + frty * 1.80 + br * 4 + halfbr * 2.30;
+                break;
+            default:
+                result = "Invalid operation";
+        }
+
+        document.getElementById("result").innerHTML = "Result: " + result.toFixed(2);
+
+        // Add the current calculation to history
+        addToHistory(commission, lg, hf, eco, bun, frty, br, halfbr, result.toFixed(2));
+    }
+
+    function addToHistory(commission, lg, hf, eco, bun, frty, br, halfbr, result) {
+        var history = JSON.parse(localStorage.getItem("calculation_history")) || [];
+        history.push({ Commission: commission, HalfLarge: lg, Half: hf, Economy: eco, Bun: bun, Frooty: frty, Brown: br, HalfBrown: halfbr, Result: result });
+        localStorage.setItem("calculation_history", JSON.stringify(history));
+
+        // Reload the history table
+        loadHistory();
+    }
+
+    function loadHistory() {
+        var history = JSON.parse(localStorage.getItem("calculation_history")) || [];
+        var historyTable = document.getElementById("historyBody");
+
+        // Clear previous history
+        historyTable.innerHTML = "";
+
+        // Populate history table
+        history.forEach(function(entry, index) {
+            var row = historyTable.insertRow();
+            var commissionCell = row.insertCell(0);
+            var halfLargeCell = row.insertCell(1);
+            var halfCell = row.insertCell(2);
+            var economyCell = row.insertCell(3);
+            var bunCell = row.insertCell(4);
+            var frootyCell = row.insertCell(5);
+            var brownCell = row.insertCell(6);
+            var halfBrownCell = row.insertCell(7);
+            var resultCell = row.insertCell(8);
+            var actionCell = row.insertCell(9);
+            commissionCell.innerHTML = entry.Commission;
+            halfLargeCell.innerHTML = entry.HalfLarge;
+            halfCell.innerHTML = entry.Half;
+            economyCell.innerHTML = entry.Economy;
+            bunCell.innerHTML = entry.Bun;
+            frootyCell.innerHTML = entry.Frooty;
+            brownCell.innerHTML = entry.Brown;
+            halfBrownCell.innerHTML = entry.HalfBrown;
+            resultCell.innerHTML = entry.Result;
+
+            // Delete button
+            var deleteBtn = document.createElement("button");
+            deleteBtn.innerHTML = "Delete";
+            deleteBtn.onclick = function() {
+                deleteRow(index);
+            };
+            actionCell.appendChild(deleteBtn);
+        });
+    }
+
+    function deleteRow(index) {
+        var history = JSON.parse(localStorage.getItem("calculation_history")) || [];
+        history.splice(index, 1);
+        localStorage.setItem("calculation_history", JSON.stringify(history));
+        loadHistory();
+    }
+</script>
+
+
+
+
+<!-- <footer>
+    <p>&copy;2024 John Distributor. All rights reserved.</p>
+</footer> -->
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
